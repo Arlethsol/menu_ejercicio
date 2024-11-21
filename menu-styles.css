@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú Principal */
+.menu {
+    background-color: #333;
+    padding: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+/* Submenú */
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    width: 200px;
+}
+
+.menu li ul a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li ul a:hover {
+    background-color: #575757;
+}
